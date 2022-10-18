@@ -4,7 +4,7 @@ import React, { useContext, useState } from 'react'
 import { AuthContext } from '../AuthContext';
 import { ChatContext } from '../ChatContext';
 import { db, storage } from '../firebase';
-import Img from '../images/photo.png'
+
 import {v4 as uuid} from 'uuid'
 import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
 

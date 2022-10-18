@@ -1,4 +1,4 @@
-import userEvent from '@testing-library/user-event';
+
 import React, { useContext } from 'react'
 import { AuthContext } from '../AuthContext';
 import { ChatContext } from '../ChatContext';
@@ -12,7 +12,7 @@ const Message = ({message}) => {
   return (
     <div className={`message ${message.senderId===currentUser.uid && "owner"}`}>
     <div className='messageInfo'>
-      <img src={message.senderId===currentUser.uid?currentUser.photoURL:data.user.photoURL} alt='image'/>
+      <img src={message.senderId===currentUser.uid?currentUser.photoURL:data.user.photoURL} alt=''/>
       <span>Just Now</span>
     </div>
 
